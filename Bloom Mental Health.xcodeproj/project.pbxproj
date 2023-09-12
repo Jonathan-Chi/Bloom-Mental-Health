@@ -20,6 +20,7 @@
 		690C12BD2AB0D004000C3241 /* NunitoSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 690C12BB2AB01794000C3241 /* NunitoSans.ttf */; };
 		690C12BE2AB0D007000C3241 /* Epilogue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 690C12BA2AB0178B000C3241 /* Epilogue.ttf */; };
 		690C12BF2AB0D009000C3241 /* Rubik.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 690C12BC2AB01AB4000C3241 /* Rubik.ttf */; };
+		690C12C22AB0E224000C3241 /* V2_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690C12C12AB0E224000C3241 /* V2_VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		690C12BA2AB0178B000C3241 /* Epilogue.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Epilogue.ttf; sourceTree = "<group>"; };
 		690C12BB2AB01794000C3241 /* NunitoSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NunitoSans.ttf; sourceTree = "<group>"; };
 		690C12BC2AB01AB4000C3241 /* Rubik.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rubik.ttf; sourceTree = "<group>"; };
+		690C12C12AB0E224000C3241 /* V2_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2_VC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +111,7 @@
 			children = (
 				690C12872AB00F4A000C3241 /* AppDelegate.swift */,
 				690C12892AB00F4A000C3241 /* SceneDelegate.swift */,
-				690C128B2AB00F4A000C3241 /* ViewController.swift */,
+				690C12C02AB0E202000C3241 /* View Controller */,
 				690C12B72AB00F8F000C3241 /* Styling.swift */,
 				690C12B92AB01772000C3241 /* Assets */,
 				690C128D2AB00F4A000C3241 /* Main.storyboard */,
@@ -145,6 +147,15 @@
 				690C12BC2AB01AB4000C3241 /* Rubik.ttf */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		690C12C02AB0E202000C3241 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				690C128B2AB00F4A000C3241 /* ViewController.swift */,
+				690C12C12AB0E224000C3241 /* V2_VC.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +294,7 @@
 			files = (
 				690C128C2AB00F4A000C3241 /* ViewController.swift in Sources */,
 				690C12882AB00F4A000C3241 /* AppDelegate.swift in Sources */,
+				690C12C22AB0E224000C3241 /* V2_VC.swift in Sources */,
 				690C128A2AB00F4A000C3241 /* SceneDelegate.swift in Sources */,
 				690C12B82AB00F8F000C3241 /* Styling.swift in Sources */,
 			);
