@@ -1,14 +1,14 @@
 //
-//  V1_VC.swift
+//  V4_VC.swift
 //  Bloom Mental Health
 //
-//  Created by Jonathan Chi on 9/12/23.
+//  Created by Jonathan Chi on 9/14/23.
 //
 
 import Foundation
 import UIKit
 
-class V2_VC : UIViewController {
+class V4_VC : UIViewController {
     
     var container : UIView = {
         let container = UIView()
@@ -40,7 +40,7 @@ class V2_VC : UIViewController {
         let btn = UIButton()
         btn.frame = CGRect(x: 0, y: 0, width: 155, height: 62)
         btn.setTitle("By Topic", for: .normal)
-        btn.backgroundColor = .yellow
+        btn.backgroundColor = .white
         btn.layer.cornerRadius = 16
         btn.titleLabel!.font = Style.myApp.font(for: .button)
         btn.setTitleColor(.brown, for: .normal)
@@ -54,7 +54,7 @@ class V2_VC : UIViewController {
         let btn = UIButton()
         btn.frame = CGRect(x: 0, y: 0, width: 155, height: 62)
         btn.setTitle("Schedule", for: .normal)
-        btn.backgroundColor = .white
+        btn.backgroundColor = .yellow
         btn.layer.cornerRadius = 16
         btn.titleLabel!.font = Style.myApp.font(for: .button)
         btn.setTitleColor(.brown, for: .normal)
@@ -72,46 +72,17 @@ class V2_VC : UIViewController {
         return sv
     } ()
     
-    var content1 : UIView = {
-        let view = UIView()
+    var content1 : UILabel = {
+        let view = UILabel()
         view.frame = CGRect(x: 0, y: 0, width: 343, height: 181)
+        view.text = "Calendar Placeholder"
+        view.font = Style.myApp.font(for: .title)
+        view.textColor = .white
         view.backgroundColor = UIColor(red: 1, green: 0.891, blue: 0.829, alpha: 1)
         view.layer.cornerRadius = 16
         return view
     } ()
-    
-    var content2 : UIView = {
-        let view = UIView()
-        view.frame = CGRect(x: 0, y: 0, width: 131, height: 114)
-        view.backgroundColor = UIColor(red: 0.804, green: 0.865, blue: 1, alpha: 1)
-        view.layer.cornerRadius = 16
-        return view
-    } ()
-    
-    var content3 : UIView = {
-        let view = UIView()
-        view.frame = CGRect(x: 0, y: 0, width: 131, height: 114)//from here width and height will be set in the function
-        view.backgroundColor = UIColor(red: 1, green: 0.908, blue: 0.925, alpha: 1)
-        view.layer.cornerRadius = 16
-        return view
-    } ()
-    
-    var content4 : UIView = {
-        let view = UIView()
-        view.frame = CGRect(x: 0, y: 0, width: 131, height: 114)
-        view.backgroundColor = UIColor(red: 1, green: 0.979, blue: 0.792, alpha: 1)
-        view.layer.cornerRadius = 16
-        return view
-    } ()
-    
-    var content5 : UIView = {
-        let view = UIView()
-        view.frame = CGRect(x: 0, y: 0, width: 131, height: 114)//from here width and height will be set in the function
-        view.backgroundColor = UIColor(red: 0.932, green: 0.9, blue: 1, alpha: 1)
-        view.layer.cornerRadius = 16
-        return view
-    } ()
-    
+
     
     
     
@@ -143,22 +114,7 @@ class V2_VC : UIViewController {
         let y_padding = 16
         
         scroll_view.addSubview(content1)
-        content1.layer.frame = CGRect(x:x_padding, y: y_padding, width: Int(x)-2*x_padding, height: 180)
-        
-        scroll_view.addSubview(content2)
-        content2.frame = CGRect(x:x_padding, y: y_padding + Int(content1.frame.maxY), width: Int(x/2) - (mid_padding/2 + x_padding), height: 200)
-        
-        scroll_view.addSubview(content3)
-        content3.frame = CGRect(x:Int(x)/2+mid_padding/2, y: y_padding + Int(content1.frame.maxY), width: Int(x/2) - (mid_padding/2 + x_padding), height: 270)
-        
-        scroll_view.addSubview(content4)
-        content4.frame = CGRect(x:x_padding, y: y_padding + Int(content2.frame.maxY), width: Int(x/2) - (mid_padding/2 + x_padding), height: 270)
-        
-        scroll_view.addSubview(content5)
-        content5.frame = CGRect(x:Int(x)/2+mid_padding/2, y: y_padding + Int(content3.frame.maxY), width: Int(x/2) - (mid_padding/2 + x_padding), height: 200)
-        
-        
-        
+        content1.layer.frame = CGRect(x:x_padding, y: y_padding, width: Int(x)-2*x_padding, height: 360)
     }
     
     override func viewDidLoad() {

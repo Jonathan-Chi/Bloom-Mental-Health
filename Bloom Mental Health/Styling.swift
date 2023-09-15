@@ -13,7 +13,6 @@ class Style {
         
         case title
         case subtitle
-        case subsubtitle
         case information
         case button
     }
@@ -78,11 +77,9 @@ private extension Style.TextStyle {
         case .subtitle:
             return Style.TextAttributes(font: .myAppSubtitle, color: UIColor(red: 87/255, green: 57/255, blue: 38/255, alpha: 1))
     
-        case .subsubtitle:
-            return Style.TextAttributes(font: .myAppSubSubtitle, color: UIColor(red: 87/255, green: 57/255, blue: 38/255, alpha: 1))
-            
         case .information:
             return Style.TextAttributes(font: .myAppInformation, color: UIColor(red: 87/255, green: 57/255, blue: 38/255, alpha: 1))
+            
         case .button:
             return Style.TextAttributes(font: .myAppButton, color: UIColor(red: 87/255, green: 57/255, blue: 38/255, alpha: 1))
         }
@@ -111,12 +108,8 @@ extension UIFont {
         return UIFont(name: "EpilogueRoman-Bold", size: 14)!
     }
     
-    static var myAppSubSubtitle: UIFont {
-        return UIFont(name: "Rubik", size: 14)!
-    }
-    
     static var myAppInformation: UIFont {
-        return UIFont(name: "Georgia", size: 12)!
+        return UIFont(name: "Rubik", size: 14)!
     }
     
     
