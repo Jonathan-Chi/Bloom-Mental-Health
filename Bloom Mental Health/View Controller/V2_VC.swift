@@ -54,7 +54,7 @@ class V2_VC : UIViewController {
         let btn = UIButton()
         btn.frame = CGRect(x: 0, y: 0, width: 155, height: 62)
         btn.setTitle("Schedule", for: .normal)
-        btn.backgroundColor = .white
+        btn.backgroundColor = .light_white
         btn.layer.cornerRadius = 16
         btn.titleLabel!.font = Style.myApp.font(for: .button)
         btn.setTitleColor(.brown, for: .normal)
@@ -120,7 +120,7 @@ class V2_VC : UIViewController {
         let x = view.frame.width
         let y = view.frame.height
         
-        view.backgroundColor = .white
+        view.backgroundColor = .light_white
         
         view.addSubview(container)
         container.frame = CGRect(x:0, y:0, width:x, height: y/3.7)

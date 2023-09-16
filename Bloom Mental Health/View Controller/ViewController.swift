@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         let btn = UIButton()
         btn.frame = CGRect(x: 0, y: 0, width: 155, height: 62)
         btn.setTitle("By Topic", for: .normal)
-        btn.backgroundColor = .white
+        btn.backgroundColor = .light_white
         btn.layer.cornerRadius = 16
         btn.titleLabel!.font = Style.myApp.font(for: .button)
         btn.setTitleColor(.brown, for: .normal)
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         let btn = UIButton()
         btn.frame = CGRect(x: 0, y: 0, width: 155, height: 62)
         btn.setTitle("Schedule", for: .normal)
-        btn.backgroundColor = .white
+        btn.backgroundColor = .light_white
         btn.layer.cornerRadius = 16
         btn.titleLabel!.font = Style.myApp.font(for: .button)
         btn.setTitleColor(.brown, for: .normal)

@@ -14,7 +14,7 @@ class V3_VC : UIViewController {
         let sv = UIScrollView()
         sv.layer.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
         sv.isScrollEnabled = true
-        sv.backgroundColor = .white
+        sv.backgroundColor = .light_white
         
         return sv
     } ()
@@ -36,7 +36,7 @@ class V3_VC : UIViewController {
         let bookmarkimageView = UIImageView(image: bookmarkimage!)
         bookmarkimageView.translatesAutoresizingMaskIntoConstraints = false
         btn.addSubview(bookmarkimageView)
-        bookmarkimageView.tintColor = .white
+        bookmarkimageView.tintColor = .light_white
         bookmarkimageView.heightAnchor.constraint(equalToConstant: 36).isActive = true
         bookmarkimageView.widthAnchor.constraint(equalToConstant: 36).isActive = true
         bookmarkimageView.centerYAnchor.constraint(equalTo: btn.centerYAnchor, constant: 0).isActive = true
@@ -48,12 +48,12 @@ class V3_VC : UIViewController {
     
     var class_lb : UILabel = {
         let lb = UILabel()
-        lb.textColor = .white
+        lb.textColor = .light_white
         lb.text = "Class"
         lb.textAlignment = .center
         lb.layer.cornerRadius = 6
         lb.layer.borderWidth = 1
-        lb.layer.borderColor = UIColor.white.cgColor
+        lb.layer.borderColor = UIColor.light_white.cgColor
         lb.font = Style.myApp.font(for: .information)
         lb.frame = CGRect(x: 0, y: 0, width: 50, height: 25)
         return lb
@@ -62,12 +62,12 @@ class V3_VC : UIViewController {
     
     var num_class_lb : UILabel = {
         let lb = UILabel()
-        lb.textColor = .white
+        lb.textColor = .light_white
         lb.textAlignment = .center
         lb.text = "16 classes"
         lb.layer.cornerRadius = 6
         lb.layer.borderWidth = 1
-        lb.layer.borderColor = UIColor.white.cgColor
+        lb.layer.borderColor = UIColor.light_white.cgColor
         lb.font = Style.myApp.font(for: .information)
         lb.frame = CGRect(x: 0, y: 0, width: 80, height: 25)
         return lb
@@ -76,7 +76,7 @@ class V3_VC : UIViewController {
     
     var topic_lb : UILabel = {
         let lb = UILabel()
-        lb.textColor = .white
+        lb.textColor = .light_white
         lb.text = "Tech Support"
         lb.font = Style.myApp.font(for: .subtitle)
         lb.frame = CGRect(x: 0, y: 0, width: 125, height: 25)
@@ -85,7 +85,7 @@ class V3_VC : UIViewController {
     
     var topic_desription : UILabel = {
         let lb = UILabel()
-        lb.textColor = .white
+        lb.textColor = .light_white
         lb.text = "Progamming for children aged 8-10"
         lb.font = Style.myApp.font(for: .information)
         lb.frame = CGRect(x: 0, y: 0, width: 125, height: 25)
@@ -113,7 +113,7 @@ class V3_VC : UIViewController {
         btn.backgroundColor = UIColor(red: 0.388, green: 0.38, blue: 0.949, alpha: 1)
         btn.layer.cornerRadius = 8
         btn.titleLabel!.font = Style.myApp.font(for: .button)
-        btn.setTitleColor(.white, for: .normal)
+        btn.setTitleColor(.light_white, for: .normal)
         return btn
     }()
     
@@ -220,68 +220,4 @@ class V3_VC : UIViewController {
         
         
     }
-}
-
-class Session_btn : UIButton {
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        customize()// To set the button color and text size
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        customize()// To set the button color and text size
-    }
-    
-    let symbol = UIImageView()
-
-    let session_name = UILabel()
-    
-    let instructor_name = UILabel()
-    
-    let meeting_time = UILabel()
-    
-    public func customize () {
-        layer.cornerRadius = 20
-        backgroundColor = UIColor(red: 0.953, green: 0.91, blue: 1, alpha: 1)
-        titleLabel?.textColor = UIColor.black
-        clipsToBounds = false
-        frame = CGRect(x: 0, y: 0, width: 130, height: 62)
-        
-        symbol.image = UIImage(named: "meditation")
-        symbol.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(symbol)
-    
-        symbol.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 22).isActive = true
-        symbol.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        
-        
-        session_name.text = "Mindfulness"
-        session_name.font = Style.myApp.font(for: .subtitle)
-        session_name.textColor = .brown
-        session_name.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(session_name)
-        session_name.leadingAnchor.constraint(equalTo: symbol.trailingAnchor, constant: 35).isActive = true
-        session_name.topAnchor.constraint(equalTo: self.topAnchor, constant: 60).isActive = true
-       
-        instructor_name.text = "Instructor Name"
-        instructor_name.font = Style.myApp.font(for: .information)
-        instructor_name.textColor = .brown
-        instructor_name.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(instructor_name)
-        instructor_name.leadingAnchor.constraint(equalTo: session_name.leadingAnchor).isActive = true
-        instructor_name.topAnchor.constraint(equalTo: session_name.bottomAnchor, constant: 8).isActive = true
-       
-        meeting_time.text = "9:00 AM"
-        meeting_time.font = Style.myApp.font(for: .information)
-        meeting_time.textColor = .black
-        meeting_time.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(meeting_time)
-        meeting_time.leadingAnchor.constraint(equalTo: session_name.leadingAnchor, constant: 25).isActive = true
-        meeting_time.topAnchor.constraint(equalTo: instructor_name.bottomAnchor, constant: 8).isActive = true
-        
-    }
-    
-    
 }

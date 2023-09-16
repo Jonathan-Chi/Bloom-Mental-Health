@@ -40,7 +40,7 @@ class V4_VC : UIViewController {
         let btn = UIButton()
         btn.frame = CGRect(x: 0, y: 0, width: 155, height: 62)
         btn.setTitle("By Topic", for: .normal)
-        btn.backgroundColor = .white
+        btn.backgroundColor = .light_white
         btn.layer.cornerRadius = 16
         btn.titleLabel!.font = Style.myApp.font(for: .button)
         btn.setTitleColor(.brown, for: .normal)
@@ -77,7 +77,7 @@ class V4_VC : UIViewController {
         view.frame = CGRect(x: 0, y: 0, width: 343, height: 181)
         view.text = "Calendar Placeholder"
         view.font = Style.myApp.font(for: .title)
-        view.textColor = .white
+        view.textColor = .light_white
         view.backgroundColor = UIColor(red: 1, green: 0.891, blue: 0.829, alpha: 1)
         view.layer.cornerRadius = 16
         return view
@@ -91,7 +91,7 @@ class V4_VC : UIViewController {
         let x = view.frame.width
         let y = view.frame.height
         
-        view.backgroundColor = .white
+        view.backgroundColor = .light_white
         
         view.addSubview(container)
         container.frame = CGRect(x:0, y:0, width:x, height: y/3.7)
